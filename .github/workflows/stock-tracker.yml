@@ -2,8 +2,8 @@ name: African Stock Market Tracker
 
 on:
   schedule:
-    # Runs every 5 minutes
-    - cron: '* * * * *'
+    # Every 15 minutes during market hours (adjust timezone as needed)
+    - cron: '*/15 3-13 * * *'  # Mon-Fri, 3am-1pm UTC
   workflow_dispatch: # Allows manual trigger
 
 jobs:
